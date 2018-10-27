@@ -28,4 +28,8 @@ class Song
     song.name = name
     song
   end
+
+  def find_by_name(name)
+    @@all.find{|song| song.name == name}
+  end
 end
