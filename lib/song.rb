@@ -45,5 +45,6 @@ class Song
     album = file.split(" - ")
     artist_name = album[0]
     album[1] = album[1].gsub(/.mp3/, "")
+    name = album[1]
   end
 end
