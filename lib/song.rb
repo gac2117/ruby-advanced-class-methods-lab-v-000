@@ -60,7 +60,7 @@ class Song
     name = album[1]
 
     song = self.new
-    @@all << song 
+    @@all << song
     song.name = name
     song.artist_name = artist_name
     song
