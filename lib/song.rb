@@ -40,4 +40,10 @@ class Song
   def self.alphabetical
     @@all.sort_by {|name| name.name}
   end
+
+  def self.new_from_filename(file)
+    album = file.split(" - ")
+    artist_name = album[0]
+    name = album[1]
+  end
 end
